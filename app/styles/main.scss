@@ -18,6 +18,14 @@ input[type="button"] {
   @extend .btn;
 }
 
+.upload-input {
+  border: 1px solid lighten(grey, 40%);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,

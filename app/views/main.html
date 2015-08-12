@@ -7,8 +7,8 @@
 </section>
 
 <section class="row">
-  <form ng-controller="MainCtrl">
-    <input type="file" accept=".jpeg, .jpg, .png, .gif" ng-model="files" multiple>
+  <form ng-controller="MainCtrl" class="text-center">
+    <input class="upload-input" type="file" accept=".jpeg, .jpg, .png, .gif" ng-model="files" multiple >
     <button ng-click="upload()" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-upload"></span> Upload</button>
   </form>
 
