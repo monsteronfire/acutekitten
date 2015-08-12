@@ -1,23 +1,15 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+<section class="jumbotron">
+  <h1>Acute Kitten Uploader</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+<!--     <img src="images/yeoman.png" alt="I'm Yeoman"><br> -->
+    Add cute photos of your favourite felines.<br/>This app is pretty pointless.
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+</section>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<section class="row">
+  <form ng-controller="MainCtrl">
+    <input type="file" accept=".jpeg, .jpg, .png, .gif" ng-model="files" multiple>
+    <button ng-click="upload()" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-upload"></span> Upload</button>
+  </form>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+</section>
